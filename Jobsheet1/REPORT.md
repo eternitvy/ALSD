@@ -3,7 +3,7 @@
 | NIM |  244107020173|
 | Nama |  Regita Abelia Putri Satriyo |
 | Kelas | TI - 1H |
-| Repository | [link] (https://github.com/eternitvy/ALSD.git) |
+| Repository | [link] (https://github.com/eternitvy/ALSD/tree/main/Jobsheet1) |
 
 # Jobsheet 1
 
