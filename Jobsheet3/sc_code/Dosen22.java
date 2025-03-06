@@ -7,7 +7,7 @@ public class Dosen22 {
     int usia;
 
     public Dosen22(){}
-
+    
     public Dosen22(String kode,String nama,Boolean status,int usia){
         this.kode = kode;
         this.nama = nama;

@@ -20,7 +20,7 @@ Menginputkan Kode Program sesuai perintah pada file [Mahasiswa22.java](./sc_code
 
 ### 3.2.2 Verifikasi Hasil Running
 
-![Screenshot](/img/percobaan1.png)
+![Screenshot](img/percobaan1.png)
 
 
 ### 3.2.3 Pertanyaan : 
@@ -46,7 +46,7 @@ Menginputkan Kode Program sesuai perintah pada class [Mahasiswa22.java](./sc_cod
 
 ### 3.3.2 Verifikasi Hasil Running
 
-![Screenshot](/img/percobaan2.png)
+![Screenshot](img/percobaan2.png)
 
 
 ### 3.3.2 Pertanyaan :
@@ -81,7 +81,7 @@ Menginputkan kode sesuai perintah pada class [MataKuliah22.java](./sc_code/MataK
 
 ### 3.4.2 Verifikasi Hasil Running
 
-![Screenshot](/img/percobaan3.png)
+![Screenshot](img/percobaan3.png)
 
 
 ### 3.4.3 Pertanyaan :
@@ -164,7 +164,7 @@ System.out.print("Masukkan jumlah data mata kuliah: ");
     
 
 hasil running
-![Screenshot](/img/tugas1.jpeg)
+![Screenshot](/img/tugas1.png)
 
 2. Menambahkan class baru [DataDosen22](./sc_code/DataDosen22.java)
 
