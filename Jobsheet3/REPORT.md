@@ -172,11 +172,14 @@ hasil running
 hasil running
 
 inputan
+
 ![screenshot](img/tugas2(1).png)
 
 outputan
+
 ![screenshot](img/tugas2(2).png)
 
 method dataDosen
+
 ![screenshot](img/tugas2(3).png)
 
