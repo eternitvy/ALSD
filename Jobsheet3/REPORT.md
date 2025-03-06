@@ -164,7 +164,7 @@ System.out.print("Masukkan jumlah data mata kuliah: ");
     
 
 hasil running
-![Screenshot](/img/tugas1.png)
+![Screenshot](img/tugas1.png)
 
 2. Menambahkan class baru [DataDosen22](./sc_code/DataDosen22.java)
 
