@@ -6,40 +6,49 @@
 | Repository | [link] (https://github.com/eternitvy/ALSD/tree/main/Jobsheet5) |
   
 
-# Jobsheet 5 - Brute Force dan Divide Conquer
+# Jobsheet 5 - brute Force dan Divide Conquer
   
 
-## 5.2 Percobaan 1 - Menghitung Nilai Faktorial dengan Algoritma Brute force dan Divide Conquer
+## 5.2 Percobaan 1 - Menghitung Nilai Faktorial dengan Algoritma Brute Force dan Divide Conquer
 
 
 ### 5.2.1 Langkah-langkah Percobaan
 
 
-Menginputkan Kode Program sesuai perintah pada file [Mahasiswa22.java](./sc_code/Mahasiswa22.java) dan [MahasiswaDemo22.java](./sc_code/MahasiswaDemo22.java).
+Menginputkan Kode Program sesuai perintah pada file [Faktorial.java](./sc_code/Faktorial.java) dan [MainFaktorial.java](./sc_code/MainFaktorial.java).
 
 
-### 3.2.2 Verifikasi Hasil Running
+### 5.2.2 Verifikasi Hasil Running
 
 ![Screenshot](img/percobaan1.png)
 
 
-### 3.2.3 Pertanyaan : 
+### 5.2.3 Pertanyaan : 
 
-1. Tidak harus, atribut dan method dalam array of object diperlukan sesuai kebutuhan.
+1. *if* adalah base case dari fungsi rekursif yang digunakan untuk menentukan kapan fungsi rekursif berhenti, sedangkan *else* adalah bagian dari fungsi rekursif yang digunakan agar program terus berjalan sampai memenuhi kondisi dari *if* (base case)
 
-2. Kode ini mendeklarasikan dan menginisialisasi array bernama arrayOfMahasiswa yang dapat menampung 3 objek dari kelas Mahasiswa.
+2. Memungkinkan, selain menggunakan *for* perulangan dapat dilakukan menggunakan *while*
+``` java
+int fakto = 1;
+        int i = 1;
+        while (i <= n) {
+            fakto = fakto * i;
+            i++;
+        }
+        return fakto;
+```
 
-3. Tidak, Pemanggilan tersebut bisa dilakukan karena jika sebuah class tidak memiliki konstruktor yang didefinisikan, Java secara otomatis menyediakan konstruktor default yang tidak mengambil argumen.
+3. Perbedaannya adalah cara perhitungannya. 
+- *fakto *= i* digunakan pada FaktorialBF() karena method tersebut menggunakan fungsi iteratif yang pada algoritmanya menggunakan *i++* untuk mengubah variabel *i*
+- *fakto = n * faktorialDC(n - 1)* digunakan pada FaktorialDC() karena method tersebut menggunakan fungsi rekursif (fungsi yang memanggil fungsi itu sendiri), sehingga pada algoritmanya menggunakan *n - 1* untuk mengubah variabel n
 
-4. Menginisiasi array sesuai indeks yang dituju.
+4. - FaktorialBF() menggunakan method fungsi iteratif
+   - FaktorialCD() menggunakan method fungsi rekursif (fungsi yang nemanggil fungsi itu sendiri)
 
-5. Class Mahasiswa digunakan untuk memberikan atribut/method pada object, sedangkan class MahasiswaDemo digunakan untuk memanggil class dan method yang terdapat pada class Mahasiswa.
-
-
-## 3.3 Percobaan 2 - Menerima Input Isian Array Menggunakan Looping
+## 5.3 Percobaan 2 - Menghitung Hasil Pangkat dengan Algoritma Brute Force dan Divide Conquer
 
 
-### 3.3.1 Langkah-langkah Percobaan
+### 5.3.1 Langkah-langkah Percobaan
 
 Menginputkan Kode Program sesuai perintah pada class [Mahasiswa22.java](./sc_code/Mahasiswa22.java) dan [MahasiswaDemo22.java](./sc_code/MahasiswaDemo22.java).
 
