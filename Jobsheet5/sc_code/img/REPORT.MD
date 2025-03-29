@@ -3,16 +3,16 @@
 | NIM |  244107020173|
 | Nama |  Regita Abelia Putri Satriyo |
 | Kelas | TI - 1H |
-| Repository | [link] (https://github.com/eternitvy/ALSD/tree/main/Jobsheet3) |
+| Repository | [link] (https://github.com/eternitvy/ALSD/tree/main/Jobsheet5) |
   
 
-# Jobsheet 3 - Array Of Object
+# Jobsheet 5 - Brute Force dan Divide Conquer
   
 
-## 3.2 Percobaan 1 - Membuat Array dari Object, Mengisi dan Menampilkan
+## 5.2 Percobaan 1 - Menghitung Nilai Faktorial dengan Algoritma Brute force dan Divide Conquer
 
 
-### 3.2.1 Langkah-langkah Percobaan
+### 5.2.1 Langkah-langkah Percobaan
 
 
 Menginputkan Kode Program sesuai perintah pada file [Mahasiswa22.java](./sc_code/Mahasiswa22.java) dan [MahasiswaDemo22.java](./sc_code/MahasiswaDemo22.java).
@@ -167,7 +167,6 @@ hasil running
 
 ![Screenshot](img/tugas1.png)
 
-
 2. Menambahkan class baru [DataDosen22](./sc_code/DataDosen22.java)
 
 hasil running
@@ -183,4 +182,3 @@ outputan
 method dataDosen
 
 ![screenshot](img/tugas2(3).png)
-

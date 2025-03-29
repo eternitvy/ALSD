@@ -1,6 +1,9 @@
 public class LaporanKeuanganMain {
     public static void main(String[] args) {
         LaporanKeuangan[] arrayObjek = new LaporanKeuangan[5];
+        String namaPerusahaan;
+        double pendapatanBulanan;
+        double biayaOperasional;
 
         arrayObjek[0] = new LaporanKeuangan("Perusahaan 1", 89000, 50000);
         arrayObjek[1] = new LaporanKeuangan("Perusahaan 2", 150000, 90000);
@@ -26,6 +29,13 @@ public class LaporanKeuanganMain {
             System.out.print("Keuntungan Perusahaan " + (i + 1) + ": ");
             arrayObjek[i].hitungKeuntungan();
             System.out.println();
+            
+        }
+
+        int jmlpendapatan = 0;
+
+        if (pendapatanBulanan > 100000) {
+            jmlpendapatan += 1;
             
         }
 

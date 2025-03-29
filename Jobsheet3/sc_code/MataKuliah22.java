@@ -1,5 +1,5 @@
 package sc_code;
-import java. util.Scanner;
+import java.util.Scanner;
 
 public class MataKuliah22 {
     String kode;
