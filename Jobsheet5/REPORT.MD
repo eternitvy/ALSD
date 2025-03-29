@@ -50,40 +50,61 @@ int fakto = 1;
 
 ### 5.3.1 Langkah-langkah Percobaan
 
-Menginputkan Kode Program sesuai perintah pada class [Mahasiswa22.java](./sc_code/Mahasiswa22.java) dan [MahasiswaDemo22.java](./sc_code/MahasiswaDemo22.java).
+Menginputkan Kode Program sesuai perintah pada class [Pangkat.java](./sc_code/Pangkat.java) dan [MainPangkat.java](./sc_code/MainPangkat.java).
 
 
-### 3.3.2 Verifikasi Hasil Running
+### 5.3.2 Verifikasi Hasil Running
 
 ![Screenshot](img/percobaan2.png)
 
 
-### 3.3.2 Pertanyaan :
+### 5.3.2 Pertanyaan :
 
-1. Menambahkan method cetakinfo()
+1. - method pangkatBF() menggunakan fungsi iteratif
+   - method pangkatCD() menggunakan fungsi rekursif dengan logika pembagian *n* (pangkat)
+
+2. sudah
 ```java
-public void cetakInfo() {
-        System.out.println("NIM     : " + nim);
-        System.out.println("Nama    : " + nama);
-        System.out.println("Kelas   : " + kelas);
-        System.out.println("IPK     : " + ipk);        
+if (n % 2 == 1) {
+    return (pangkatDC(a, n / 2) * pangkatDC(a, n / 2) * a);
+}
+else {
+    return(pangkatDC(a, n / 2) * pangkatDC(a, n / 2));
+}
+```
+
+3. Method pangkatBF() dapat dijalankan tanpa parameter, karena pada class Pangkat sudah terdapat atribut *nilai* dan *pangkat*
+``` java
+int pangkatBF() {
+    int hasil = 1;
+    for(int i = 0; i < pangkat; i++) {
+        hasil = hasil * nilai;
     }
+    return hasil;
+}
 ```
 
-2. error karena array baru myArrayOfMahasiswa tidak di inisiasi sehingga menyebabkan nullpointerexception
+Mengubah pada class MainPangkat
 ```java
-Mahasiswa03[] myArrayOfMahasiswa03 = new Mahasiswa03[3];
-        myArrayOfMahasiswa03[0].nim = "244107060033";
-        myArrayOfMahasiswa03[0].nama = "AGNES TITANIA KINANTI";
-        myArrayOfMahasiswa03[0].kelas = "SIB-1E";
-        myArrayOfMahasiswa03[0].ipk = (float) 3.75;
+System.out.println(p.nilai + "^" + p.pangkat + ": " + p.pangkatBF());
 ```
 
+4.  pangkatBF()
+    - menggunakan perulangan
+    - menginisialisasi *hasil = 1*
+    - perulangan akan berjalan sebanyak *n (pangkat)*, dan setiap iterasi variabel **hasil** akan dikalikan dengan *a*
+    - setelah memenuhi kondisi perulangan, perulangan akan berhenti dan meng-*return*kan hasil *a* berpangkat *n*
 
-## 3.4 Percobaan 3 - Constructor Berparameter
+    pangkatDC()
+    - menggunakan fungsi rekursif
+    - jika *n == 1*, maka hasil perhitungan adalah *a*
+    - jika *n* adalah genap, program menghitung pangkatDC(a, n/2) dua kali dan mengalikan hasilnya
+    - jika *n* adalah ganjil, program menghitung pangkatDC(a, n/2) dua kali dan mengalikan hasil tersebut dengan *a* tambahan
+
+## 5.4 Percobaan 3 - Menghitung Sum Array dengan algoritma Brute Force dan Divide Conquer
 
 
-### 3.4.1 Langkah-langkah Percobaan
+### 5.4.1 Langkah-langkah Percobaan
 
 Menginputkan kode sesuai perintah pada class [MataKuliah22.java](./sc_code/MataKuliah22.java) dan class [MataKuliahDemo22.java](./sc_code/MataKuliahDemo22.java).
 
