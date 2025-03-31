@@ -106,109 +106,41 @@ System.out.println(p.nilai + "^" + p.pangkat + ": " + p.pangkatBF());
 
 ### 5.4.1 Langkah-langkah Percobaan
 
-Menginputkan kode sesuai perintah pada class [MataKuliah22.java](./sc_code/MataKuliah22.java) dan class [MataKuliahDemo22.java](./sc_code/MataKuliahDemo22.java).
+Menginputkan kode sesuai perintah pada class [Sum.java](./sc_code/Sum.java) dan class [MainSum.java](./sc_code/MainSum.java).
 
 
-### 3.4.2 Verifikasi Hasil Running
+### 5.4.2 Verifikasi Hasil Running
 
 ![Screenshot](img/percobaan3.png)
 
 
-### 3.4.3 Pertanyaan :
+### 5.4.3 Pertanyaan :
 
-1. 1 class dapat memiliki lebih lebih dari 1 constructor, contohnya :
-```java
-public MataKuliah22() {
-    }
+1. *mid* digunakan untuk membagi array menjadi 2 bagian untuk pendekatan rekursif dalam menghitung total
 
-    public MataKuliah22(String kode, String nama, int sks, int jmlJam) {
-        this.kode = kode;
-        this.nama = nama;
-        this.sks = sks;
-        this.jumlahJam = jumlahJam;
-    }
+2. - *lsum* digunakan untuk menghitung total array dari kiri
+   - *rsum* digunakan untuk menghitung total array dari kanan
+
+3. untuk mendapatkan total keseluruhan dari array, karena *lsum* dan *rsum* digunakan hanya pemisah agar perhitungan dilakukan secara efisien dan terstruktur
+
+4. base case dari TotalDC()
+``` java 
+if (l == r) {
+    return arr[l];
+}
 ```
 
-2. Menambahkan method tambahData()
-
-```java
-void tambahData() {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Kode       : ");
-        this.kode = sc.nextLine();
-        System.out.print("Nama       : ");
-        this.nama = sc.nextLine();
-        System.out.print("SKS        : ");
-        this.sks = sc.nextInt();
-        System.out.print("Jumlah Jam : ");
-        this.jumlahJam = sc.nextInt();
-    }
-``` 
-Memanggil method tambahData()
-```java
-for (int i = 0; i < arrayOfMataKuliah.length; i++) {
-            System.out.println("Masukkan Data Mata Kuliah ke-" + (i + 1));
-            arrayOfMataKuliah[i] = new MataKuliah22();
-            arrayOfMataKuliah[i].tambahData();
-            System.out.println("-----------------------------------------");
-        }
-```
-
-3. Menambahkan method cetakInfo()
-```java
-public void cetakInfo() {
-        System.out.println("Kode       : " + this.kode);
-        System.out.println("Nama       : " + this.nama);
-        System.out.println("SKS        : " + this.sks);
-        System.out.println("Jumlah jam : " + this.jumlahJam);
-
-    }
-```
-memanggil method cetakInfo()
-```java
-for (int i = 0; i < arrayOfMataKuliah.length; i++) {
-            System.out.println("Data Mata Kuliah ke-" + (i + 1));
-            arrayOfMataKuliah[i].cetakInfo();
-            System.out.println("-----------------------------------------");
-        }
-```
-
-4. Memodifikasi kode program
-```java
-System.out.print("Masukkan jumlah data mata kuliah: ");
-        int jumlahData = sc.nextInt();
-
-        MataKuliah22[] arrayOfMataKuliah = new MataKuliah22[jumlahData];
-```
+5. - totalDC() menggunakan fungsi rekursif untuk menghitung jumlah elemen dalam array dengan membagi array menjadi dua bagian *lsum* dan *rsum*
+- program akan terus berjalan hingga mencapai base case, dan kemudian menjumlahkan hasil dari kedua bagian *lsum* dan *rsum* untuk memberikan total keseluruhan
 
 
-## 3.5 Tugas
+## 4.5 Tugas
 
-1. Membuat sebuah program untuk menampilkan informasi tentang dosen, dengan menerima input semua informasi terkait dosen dan menampilkannya ke layar. Terdiri dari 2 class : 
-    - [Dosen22.java](./sc_code/Dosen22.java)
+    - [Mahasiswa.java](./sc_code/Mahasiswa.java)
         
-        Berisikan attribute informasi dosen, juga method berkonstruktor
-    - [DosenDemo22.java](./sc_code/DosenDemo22.java)
-        
-        Class untuk proses input juga menampilkan data yang telah diinputkan
+    - [MainMahasiswa.java](./sc_code/MainMahasiswa.java)
     
 
 hasil running
 
-![Screenshot](img/tugas1.png)
-
-2. Menambahkan class baru [DataDosen22](./sc_code/DataDosen22.java)
-
-hasil running
-
-inputan
-
-![screenshot](img/tugas2(1).png)
-
-outputan
-
-![screenshot](img/tugas2(2).png)
-
-method dataDosen
-
-![screenshot](img/tugas2(3).png)
+![Screenshot](img/latihan.png)
