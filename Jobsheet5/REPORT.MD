@@ -136,9 +136,9 @@ if (l == r) {
 
 ## 4.5 Tugas
 
-    - [Mahasiswa.java](./sc_code/Mahasiswa.java)
+[Mahasiswa.java](./sc_code/Mahasiswa.java)
         
-    - [MainMahasiswa.java](./sc_code/MainMahasiswa.java)
+[MainMahasiswa.java](./sc_code/MainMahasiswa.java)
     
 
 hasil running
