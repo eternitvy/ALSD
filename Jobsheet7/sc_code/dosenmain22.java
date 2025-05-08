@@ -24,18 +24,18 @@ public class dosenmain22 {
 
             switch (pilihan) {
                 case 1:
-                    System.out.print("Masukkan Kode Dosen: ");
-                    String kode = sc.next();
-                    System.out.print("Masukkan Nama Dosen: ");
-                    String nama  = sc.next();
-                    System.out.println("Masukkan Jenis Kelamin");
-                    System.out.print("True (Laki-laki) / False (Perempuan): ");
-                    boolean jenisKelamin = sc.nextBoolean();
-                    System.out.print("Masukkan Usia: ");
-                    int usia = sc.nextInt();
-                    
-                    dosen22 dosen = new dosen22(kode, nama, jenisKelamin, usia);
-                    datadosen.tambah(dosen);
+                System.out.print("Masukkan Kode Dosen: ");
+                String kode = sc.next();
+                System.out.print("Masukkan Nama Dosen: ");
+                String nama  = sc.next();
+                System.out.println("Masukkan Jenis Kelamin");
+                System.out.print("True (Laki-laki) / False (Perempuan): ");
+                boolean jenisKelamin = sc.nextBoolean();
+                System.out.print("Masukkan Usia: ");
+                int usia = sc.nextInt();
+                
+                dosen22 dosen = new dosen22(kode, nama, jenisKelamin, usia);
+                datadosen.tambah(dosen);
                     break;
                 
                 case 2:

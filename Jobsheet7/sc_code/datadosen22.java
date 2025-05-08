@@ -15,7 +15,7 @@ public class datadosen22 {
 
     void tampil() {
         for (int i = 0; i < indeks; i++) {
-            System.out.println("Data Dosem ke-" + (i + 1) + ": ");
+            System.out.println("Data Dosen ke-" + (i + 1));
             datadosen[i].tampil();
             System.out.println("-------------------------");
         }
