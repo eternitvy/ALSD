@@ -1,3 +1,4 @@
+package sc_code;
 public class StackTugasMahasiswa22 {
     Mahasiswa22[] stack;
     int size;
@@ -28,7 +29,7 @@ public class StackTugasMahasiswa22 {
     }
 
     public void push(Mahasiswa22 mhs) {
-        if (isFull()) {
+        if (!isFull()) {
             top++;
             stack[top] = mhs;
         }
@@ -38,7 +39,7 @@ public class StackTugasMahasiswa22 {
     }
 
     public Mahasiswa22 pop() {
-        if (isEmpty()) {
+        if (!isEmpty()) {
             Mahasiswa22 m = stack[top];
             top--;
             return m;
@@ -50,7 +51,7 @@ public class StackTugasMahasiswa22 {
     }
 
     public Mahasiswa22 peek() {
-        if (isEmpty()) {
+        if (!isEmpty()) {
             return stack[top];
         }
         else {
@@ -59,9 +60,39 @@ public class StackTugasMahasiswa22 {
         }
     }
 
+    public Mahasiswa22 bottom() {
+        if (!isEmpty()) {
+            return stack[0];
+        }
+        else {
+            System.out.println("Stack kosong! Tidak ada tugas yang dikumpulkan.");
+            return null;
+        }
+    }
+
+    public int count() {
+        return top + 1;
+    }
+
+    public String konversiDesimalKeBiner(int nilai) {
+        StackKonversi22 stack = new StackKonversi22();
+        while (nilai != 0) {
+            int sisa = nilai % 2;;
+            stack.push(sisa);
+            nilai = nilai / 2;
+        }
+
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+
+        return biner;
+    }
+
     public void print() {
         for (int i = 0; i <= top; i++) {
-            System.out.println(stack[i].nama + "\t" + stack[i].nilai + "\t" + stack[i].kelas);
+            System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
         }
         System.out.println();
     }

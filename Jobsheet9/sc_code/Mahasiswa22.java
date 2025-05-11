@@ -1,3 +1,4 @@
+package sc_code;
 public class Mahasiswa22 {
     String nim;
     String nama;
