@@ -114,12 +114,13 @@ Memanggil method dan menambahkan case pada class [LayananAkademikSIAKAD22.java](
 
 ## 2.3 Tugas
 
-1. Membuat class sesuai perintah [Surat22.java](./sc_code/Surat22.java) untuk menyimpan atribut
-2. Membuat class [StackSurat22.java](./sc_code/StackSurat22.java) untuk menyimpan method yang akan dijalankan
-3. Membuat class [SuratDemo22.java](./sc_code/SuratDemo22.java) untuk membuat tampilan menu dan menjalankan method
+1. Membuat class sesuai perintah [LatihanMahasiswa22.java](./sc_code/LatihanMahasiswa22.java) untuk menyimpan atribut
+2. Membuat class [LatihanAntrianKRS22.java](./sc_code/LatihanAntrianKRS22.java) untuk menyimpan method yang akan dijalankan
+3. Membuat class [MainAntrianKRS22.java](./sc_code/MainAntrianKRS22.java) untuk membuat tampilan menu dan menjalankan method
 
 #### Hasil Running
 
-![Screenshot](img/tugas.png)
-![Screenshot](img/tugass.png)
-![Screenshot](img/tugasss.png)
+![Screenshot](img/tugas1.png)
+![Screenshot](img/tugas11.png)
+![Screenshot](img/tugas111.png)
+![Screenshot](img/tugas1111.png)
