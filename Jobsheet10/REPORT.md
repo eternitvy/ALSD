@@ -76,29 +76,41 @@ Menginputkan Kode Program sesuai perintah pada file
 
 ### 2.2.4 Pertanyaan :
 
-1. Alur kerja method `KonversiDesimalKeBiner`
-    - Dimulai dari method menerima input bilangan desimal `(int nilai)`
-    - melakukan perulangan selama `nilai > 0`, program akan:
-        - menghitung sisa pembagian `int sisa = nilai % 2;;` untuk mengetahui hasil pembagian 0 atau 1
-        - menyimpan sisa ke dalam stack `stack.push(sisa);`
-        - membagi nilai dengan 2 `nilai = nilai / 2;`
-    - setelah nilai habis, program akan mengambil elemen dari satck satu per satu dari atas ke bawah untuk membentuk _String biner_
-    - lalu me-_return_ atau mengembalikan hasil _String biner_ tersebut
-
-2. Mengubah kondisi perulangan
+Menambahkan method lihatAkhir pada class [AntrianLayanan22.java](./sc_code/AntrianLayanan22)
 ```java
-        while (nilai != 0) {
-            int sisa = nilai % 2;;
-            stack.push(sisa);
-            nilai = nilai / 2;
+    public void lihatAkhir() {
+        if (isEmpty()) {
+            System.out.println("Antrian kosong.");
+        } else {
+            System.out.println("== MAHASISWA PALING BELAKANG ==");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[rear].tampilkanData();
         }
-
-        String biner = new String();
-        while (!stack.isEmpty()) {
-            biner += stack.pop();
-        }
+    }
 ```
-Hasil perulangan akan tetap sama, karena kondisi `nilai != 0` dan `nilai > 0` dalam konteks perulangan ini ada **setara** selama `nilai` adalah bilangan bulan positif
+
+Memanggil method dan menambahkan case pada class [LayananAkademikSIAKAD22.java](./sc_code/LayananAkademikSIAKAD.java)
+```java
+                case 6:
+                    antrian.lihatAkhir();
+                    System.out.println();
+                    break;
+```
+
+```java
+ do {
+            System.out.println("================ MENU ================");
+            System.out.println("| 1. Tambah Mahasiswa ke Antrian     |");
+            System.out.println("| 2. Layani Mahasiswa                |");
+            System.out.println("| 3. Lihat Mahasiswa Terdepan        |");
+            System.out.println("| 4. Lihat Semua Antrian             |");
+            System.out.println("| 5. Jumlah Mahasiswa dalam Antrian  |");
+            System.out.println("| 6. Lihat Antrian Paling Belakang   |");
+            System.out.println("| 0. Keluar                          |");
+            System.out.println("======================================");
+```
+### Hasil Running
+![Screenshot](img/runningPertanyaanP2.png)
 
 ## 2.3 Tugas
 

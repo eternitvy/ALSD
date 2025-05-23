@@ -85,6 +85,16 @@ public class AntrianLayanan22 {
         size--;
         return mhs;
     }
+
+    public void lihatAkhir() {
+        if (isEmpty()) {
+            System.out.println("Antrian kosong.");
+        } else {
+            System.out.println("== MAHASISWA PALING BELAKANG ==");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[rear].tampilkanData();
+        }
+    }
 }
 
 
