@@ -15,6 +15,6 @@ public class LatMhs {
     }
 
     void tampilInformasi() {
-        System.out.println(nama + "\t\t" + nim + "\t" + kelas);
+        System.out.println(nama + "\t" + nim + "\t" + kelas);
     }
 }

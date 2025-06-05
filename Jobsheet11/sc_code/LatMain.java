@@ -55,6 +55,8 @@ public class LatMain {
                 case 3:
                     System.out.println("== SELURUH DATA ANTRIAN ==");
                     System.out.println();
+                    System.out.println("Nama\tNIM \tKelas");
+                    System.out.println();
                     antrian.print();
                     break;
 

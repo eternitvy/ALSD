@@ -105,13 +105,15 @@ Menginputkan Kode Program sesuai perintah pada file
 
 ## 2.3 Tugas
 
-1. Membuat class sesuai perintah [LatihanMahasiswa22.java](./sc_code/LatihanMahasiswa22.java) untuk menyimpan atribut
-2. Membuat class [LatihanAntrianKRS22.java](./sc_code/LatihanAntrianKRS22.java) untuk menyimpan method yang akan dijalankan
-3. Membuat class [MainAntrianKRS22.java](./sc_code/MainAntrianKRS22.java) untuk membuat tampilan menu dan menjalankan method
+1. Membuat class [LatMhs.java](./sc_code/LatMhs.java) & [LatNodeMhs.java](./sc_code/LatNodeMhs.java) untuk menyimpan atribut
+2. Membuat class [LatAntrianLayanan.java](./sc_code/LatAntrianLayanan.java) untuk menyimpan method yang akan dijalankan
+3. Membuat class [LatMain.java](./sc_code/LatMain.java) untuk membuat tampilan menu dan menjalankan method
 
 #### Hasil Running
 
-![Screenshot](img/tugas1.png)
-![Screenshot](img/tugas11.png)
-![Screenshot](img/tugas111.png)
-![Screenshot](img/tugas1111.png)
+![Screenshot](img/tugas.png)
+![Screenshot](img/tugass.png)
+![Screenshot](img/tugasss.png)
+![Screenshot](img/tugassss.png)
+![Screenshot](img/tugasssss.png)
+![Screenshot](img/tugassssss.png)
