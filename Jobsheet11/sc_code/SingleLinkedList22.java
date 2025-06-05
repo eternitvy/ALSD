@@ -110,6 +110,23 @@ public class SingleLinkedList22 {
 
     public void removeFirst() {
         if (isEmpty()) {
+            System.out.println("linked list masih kosong, tidak dapat dihapus!");
+        }
+        else if (head == tail) {
+            head = tail = null;
+        }
+        else {
+            Node22 temp = head;
+            while (temp.next != tail) {
+                temp = temp.next;
+            }
+            temp.next = null;
+            tail = temp;
+        }
+    }
+
+    public void removeLast() {
+        if (isEmpty()) {
             System.out.println("Linked list masih kosong, tidak dapat dihapus!");
         }
         else if (head == tail) {
@@ -124,6 +141,7 @@ public class SingleLinkedList22 {
             tail = temp;
         }
     }
+
 
     public void remove(String key) {
         if (isEmpty()) {
@@ -143,6 +161,7 @@ public class SingleLinkedList22 {
                     }
                     break;
                 }
+                temp = temp.next;
             }
         }
     }

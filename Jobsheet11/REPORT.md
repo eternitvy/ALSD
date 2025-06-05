@@ -86,58 +86,22 @@ Memanggil fungsi tersebut pada setiap case
 ![Screenshot](img/pertanyaanp11.png)
 ![Screenshot](img/pertanyaanp111.png)
 
-## 2.2 Percobaan 2 - Antrian Layanan Akademik
+## 2.2 Percobaan 2 - Modifikasi Elemen Pada Single Linked List
 
 ### 2.2.1 Langkah-langkah Percobaan
 
 Menginputkan Kode Program sesuai perintah pada file 
-- [Mahasiswa22.java](./sc_code/Mahasiswa22.java)
-- [AntrianLayanan22.java](./sc_code/AntrianLayanan22.java)
-- [LayananAkademikSIAKAD22.java](./sc_code/LayananAkademikSIAKAD22.java)
+- [SingleLinkedList22.java](./sc_code/SingleLinkedList22.java)
+- [SLLPercobaan2.java](./sc_code/SLLPercobaan2.java)
 
 ### 2.2.3 Verifikasi Hasil Running
 
-![Screenshot](img/verifikasiP2.png)
-![Screenshot](img/verifikasiP22.png)
-![Screenshot](img/verifikasiP222.png)
+![Screenshot](img/P2.png)
 
 ### 2.2.4 Pertanyaan :
+1. Digunakan `break` untuk menghentikan pencarian lebih lanjut dalam linked list setelah node yang ingin dihapus telah ditemukan dan telah dihapus
 
-Menambahkan method lihatAkhir pada class [AntrianLayanan22.java](./sc_code/AntrianLayanan22)
-```java
-    public void lihatAkhir() {
-        if (isEmpty()) {
-            System.out.println("Antrian kosong.");
-        } else {
-            System.out.println("== MAHASISWA PALING BELAKANG ==");
-            System.out.println("NIM - NAMA - PRODI - KELAS");
-            data[rear].tampilkanData();
-        }
-    }
-```
-
-Memanggil method dan menambahkan case pada class [LayananAkademikSIAKAD22.java](./sc_code/LayananAkademikSIAKAD.java)
-```java
-                case 6:
-                    antrian.lihatAkhir();
-                    System.out.println();
-                    break;
-```
-
-```java
- do {
-            System.out.println("================ MENU ================");
-            System.out.println("| 1. Tambah Mahasiswa ke Antrian     |");
-            System.out.println("| 2. Layani Mahasiswa                |");
-            System.out.println("| 3. Lihat Mahasiswa Terdepan        |");
-            System.out.println("| 4. Lihat Semua Antrian             |");
-            System.out.println("| 5. Jumlah Mahasiswa dalam Antrian  |");
-            System.out.println("| 6. Lihat Antrian Paling Belakang   |");
-            System.out.println("| 0. Keluar                          |");
-            System.out.println("======================================");
-```
-### Hasil Running
-![Screenshot](img/runningPertanyaanP2.png)
+2. di baris pertama, digunakan untuk melompati node yang dihapus, sehingga node sebelumnya `temp` sekarang menunjuk ke node setelah node yang dihapus. di baris kedua, digunakan untuk memperbarui `tail` jika node yang dihapus adalah node terakhir.
 
 ## 2.3 Tugas
 
